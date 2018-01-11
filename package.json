@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "examples of inheritance in object oriented programming.",
   "scripts": {
-    "test": "mocha"
+    "test": "NODE_PATH=./src ./node_modules/mocha/bin/mocha --require should"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ULL-ESIT-GRADOII-PL/OOP.git",
+    "url": "git@github.com:ULL-ESIT-GRADOII-PL/OOP.git"
   },
   "keywords": [
     "js",
