@@ -7,18 +7,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ULL-ESIT-MII-CA-1718/ejs-chapter-6-oop-KevMCh.git"
+    "url": "git@github.com:ULL-ESIT-GRADOII-PL/OOP.git",
   },
   "keywords": [
     "js",
     "inheritance"
   ],
-  "author": "Kevin Martín Chinea",
+  "author": "Casiano Rodríguez León",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ULL-ESIT-MII-CA-1718/ejs-chapter-6-oop-KevMCh/issues"
+    "url": "https://github.com/ULL-ESIT-GRADOII-PL/OOP/issues"
   },
-  "homepage": "https://github.com/ULL-ESIT-MII-CA-1718/ejs-chapter-6-oop-KevMCh#readme",
+  "homepage": "https://github.com/ULL-ESIT-GRADOII-PL/OOP/blob/structure/README.md",
   "devDependencies": {
     "better-assert": "^1.0.2",
     "gulp": "^3.9.1",
