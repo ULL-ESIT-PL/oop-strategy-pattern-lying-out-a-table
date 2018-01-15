@@ -1,6 +1,7 @@
 ## Eloquent JavaScript. Chapter 6: The Secret Life of Objects.  Section *Laying out a table*
 
-[![Build Status](https://travis-ci.org/ULL-ESIT-MII-CA-1718/ejs-chapter-6-oop-KevMCh.svg?branch=master)](https://travis-ci.org/ULL-ESIT-MII-CA-1718/ejs-chapter-6-oop-KevMCh)
+
+[![Build Status](https://travis-ci.org/ULL-ESIT-GRADOII-PL/OOP.svg?branch=structure)](https://travis-ci.org/ULL-ESIT-GRADOII-PL/OOP)
 
 #### Introduction
 Example corresponds to the section **Laying out a table** of Chapter 6 **[The Secret Life of Objects](http://eloquentjavascript.net/06_object.html)**, book **[Eloquent javaScript](http://eloquentjavascript.net/)**
