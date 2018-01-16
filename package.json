@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "examples of inheritance in object oriented programming.",
   "scripts": {
+    "start": "NODE_PATH=./src node src/main.js",
     "test": "NODE_PATH=./src ./node_modules/mocha/bin/mocha --require should"
   },
   "repository": {
