@@ -4,6 +4,7 @@
   "description": "examples of inheritance in object oriented programming.",
   "scripts": {
     "start": "NODE_PATH=./src node src/main.js",
+    "cover": "NODE_PATH=./src ./node_modules/.bin/nyc ./node_modules/.bin/mocha --require should",
     "test": "NODE_PATH=./src ./node_modules/mocha/bin/mocha --require should"
   },
   "repository": {
@@ -12,7 +13,8 @@
   },
   "keywords": [
     "js",
-    "inheritance"
+    "inheritance",
+    "travis"
   ],
   "author": "Casiano Rodríguez León",
   "license": "MIT",
@@ -24,7 +26,9 @@
     "better-assert": "^1.0.2",
     "gulp": "^3.9.1",
     "gulp-shell": "^0.6.3",
+    "istanbul": "^0.4.5",
     "mocha": "^3.5.3",
+    "nyc": "^11.4.1",
     "should": "^13.0.1"
   },
   "engines": {

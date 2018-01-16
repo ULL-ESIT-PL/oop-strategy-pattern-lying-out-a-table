@@ -15,3 +15,5 @@ gulp.task('debugger', shell.task('NODE_PATH=./src node --inspect-brk src/main.js
 gulp.task('debug', shell.task('NODE_PATH=./src node --inspect --debug-brk src/main.js'));
 
 gulp.task("test", shell.task("NODE_PATH=./src ./node_modules/mocha/bin/mocha --require should"));
+
+gulp.task("cover", shell.task("NODE_PATH=./src ./node_modules/.bin/nyc --reporter=html ./node_modules/.bin/mocha --require should"));
