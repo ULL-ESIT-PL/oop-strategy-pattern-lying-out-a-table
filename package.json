@@ -5,6 +5,7 @@
   "scripts": {
     "start": "NODE_PATH=./src node src/main.js",
     "cover": "NODE_PATH=./src ./node_modules/.bin/nyc ./node_modules/.bin/mocha --require should",
+    "coverall": "NODE_PATH=./src ./node-modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls",
     "test": "NODE_PATH=./src ./node_modules/mocha/bin/mocha --require should"
   },
   "repository": {
@@ -24,6 +25,7 @@
   "homepage": "https://github.com/ULL-ESIT-GRADOII-PL/OOP/blob/structure/README.md",
   "devDependencies": {
     "better-assert": "^1.0.2",
+    "coveralls": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-shell": "^0.6.3",
     "istanbul": "^0.4.5",
