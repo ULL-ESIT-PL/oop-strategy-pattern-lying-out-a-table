@@ -19,8 +19,3 @@ gulp.task('debug', shell.task('NODE_PATH=./src node --inspect --debug-brk src/ma
 gulp.task("test", shell.task("NODE_PATH=./src ./node_modules/mocha/bin/mocha --require should"));
 
 gulp.task("cover", shell.task("NODE_PATH=./src ./node_modules/.bin/nyc --reporter=html ./node_modules/.bin/mocha --require should"));
-
-gulp.task('coverall', () => {
-  gulp.src('test/coverage/**/lcov.info')
-    .pipe(coveralls());
-});

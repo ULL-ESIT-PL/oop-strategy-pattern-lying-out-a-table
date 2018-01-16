@@ -5,7 +5,6 @@
   "scripts": {
     "start": "NODE_PATH=./src node src/main.js",
     "cover": "NODE_PATH=./src nyc mocha --require should",
-    "coverall": "NODE_PATH=./src nyc report --reporter=text-lcov | coveralls",
     "test": "NODE_PATH=./src mocha --require should"
   },
   "repository": {
