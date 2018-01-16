@@ -3,4 +3,3 @@ node_js:
   - "node"
 before_script:
   - export NODE_PATH=./src
-after_success: npm run coverall
