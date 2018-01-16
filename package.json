@@ -4,9 +4,9 @@
   "description": "examples of inheritance in object oriented programming.",
   "scripts": {
     "start": "NODE_PATH=./src node src/main.js",
-    "cover": "NODE_PATH=./src ./node_modules/.bin/nyc ./node_modules/.bin/mocha --require should",
-    "coverall": "NODE_PATH=./src ./node-modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls",
-    "test": "NODE_PATH=./src ./node_modules/mocha/bin/mocha --require should"
+    "cover": "NODE_PATH=./src nyc mocha --require should",
+    "coverall": "NODE_PATH=./src nyc report --reporter=text-lcov | coveralls",
+    "test": "NODE_PATH=./src mocha --require should"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "better-assert": "^1.0.2",
     "coveralls": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-coveralls": "^0.1.4",
     "gulp-shell": "^0.6.3",
     "istanbul": "^0.4.5",
     "mocha": "^3.5.3",
