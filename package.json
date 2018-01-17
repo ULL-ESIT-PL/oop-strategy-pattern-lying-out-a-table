@@ -14,7 +14,8 @@
   "keywords": [
     "js",
     "inheritance",
-    "travis"
+    "travis",
+    "istanbul"
   ],
   "author": "Casiano Rodríguez León",
   "license": "MIT",

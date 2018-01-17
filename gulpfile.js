@@ -19,3 +19,9 @@ gulp.task('debug', shell.task('NODE_PATH=./src node --inspect --debug-brk src/ma
 gulp.task("test", shell.task("NODE_PATH=./src ./node_modules/mocha/bin/mocha --require should"));
 
 gulp.task("cover", shell.task("NODE_PATH=./src ./node_modules/.bin/nyc --reporter=html ./node_modules/.bin/mocha --require should"));
+
+gulp.task("browserify", shell.task("NODE_PATH=./src browserify src/main.js -o src/bundle.js --debug"));
+
+gulp.task("watchify", shell.task("NODE_PATH=./src watchify src/main.js -o src/bundle.js --debug"));
+
+gulp.task("beefy", ["browserify"], shell.task("NODE_PATH=./src beefy src/bundle.js"));
