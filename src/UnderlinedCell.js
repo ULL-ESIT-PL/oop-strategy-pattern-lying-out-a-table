@@ -1,4 +1,4 @@
-var TCell = require("t-cell");
+let TCell = require("TCell");
 
 class UnderlinedCell extends TCell {
   constructor(inner) {

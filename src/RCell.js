@@ -1,4 +1,4 @@
-var TCell = require("t-cell");
+let TCell = require("TCell");
 
 class RCell extends TCell {
   constructor(text) {
@@ -6,9 +6,9 @@ class RCell extends TCell {
   }
 
   draw(width, height) {
-    var result = [];
-    for (var i = 0; i < height; i++) {
-      var line = this.text[i] || "";
+    let result = [];
+    for (let i = 0; i < height; i++) {
+      let line = this.text[i] || "";
       result.push(" ".repeat(width - line.length) + line);
     }
     return result;

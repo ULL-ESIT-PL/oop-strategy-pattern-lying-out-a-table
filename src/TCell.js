@@ -8,9 +8,9 @@ class TCell {
   };
 
   getContent(width, height) {
-    var result = [];
-    for (var i = 0; i < height; i++) {
-      var line = this.text[i] || "";
+    let result = [];
+    for (let i = 0; i < height; i++) {
+      let line = this.text[i] || "";
       result.push(line + " ".repeat(width - line.length));
     }
 

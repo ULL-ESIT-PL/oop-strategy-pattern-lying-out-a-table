@@ -1,6 +1,6 @@
-var TCell = require("t-cell");
-var RCell = require("r-cell");
-var UnderlinedCell = require("underlined-cell");
+let TCell = require("TCell");
+let RCell = require("RCell");
+let UnderlinedCell = require("UnderlinedCell");
 
 class DTable {
   constructor () {}
@@ -10,8 +10,8 @@ class DTable {
   }
 
   drawTable(rows) {
-    var heights = this.rowHeights(rows);
-    var widths = this.colWidths(rows);
+    let heights = this.rowHeights(rows);
+    let widths = this.colWidths(rows);
 
     function drawLine(blocks, lineNo) {
       return blocks.map(function(block) {
@@ -20,7 +20,7 @@ class DTable {
     }
 
     function drawRow(row, rowNum) {
-      var blocks = row.map(function(cell, colNum) {
+      let blocks = row.map(function(cell, colNum) {
         return cell.draw(widths[colNum], heights[rowNum]);
       });
       return blocks[0].map(function(_, lineNo) {
@@ -32,13 +32,13 @@ class DTable {
   }
 
   dataTable(data) {
-    var keys = Object.keys(data[0]);
-    var headers = keys.map(function(name) {
+    let keys = Object.keys(data[0]);
+    let headers = keys.map(function(name) {
       return new UnderlinedCell(name);
     });
-    var body = data.map(function(row) {
+    let body = data.map(function(row) {
       return keys.map(function(name) {
-        var value = row[name];
+        vletar value = row[name];
 
         if (/^\s*[-+]?\d+([.]\d*)?([eE][-+]?\d+)?\s*$/.test(value))
           return new RCell(String(value));
