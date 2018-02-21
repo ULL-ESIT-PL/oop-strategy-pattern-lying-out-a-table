@@ -38,7 +38,7 @@ class DTable {
     });
     let body = data.map(function(row) {
       return keys.map(function(name) {
-        vletar value = row[name];
+        let value = row[name];
 
         if (/^\s*[-+]?\d+([.]\d*)?([eE][-+]?\d+)?\s*$/.test(value))
           return new RCell(String(value));
