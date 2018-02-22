@@ -1,6 +1,6 @@
 class TCell {
   constructor(text) {
-    this.text = text.split("\n");
+    this.text = text.toString().split("\n");
   }
 
   draw(width, height) {
