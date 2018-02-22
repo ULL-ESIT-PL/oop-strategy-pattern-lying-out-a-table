@@ -2,7 +2,6 @@
 
 
 Rama master: [![Build Status](https://travis-ci.com/ULL-ESIT-PL-1718/oop-alu0100792218.svg?token=qjMyc3K9SAKhDFs5zQop&branch=master)](https://travis-ci.com/ULL-ESIT-PL-1718/oop-alu0100792218)
-Rama ecma6: [![Build Status](https://travis-ci.com/ULL-ESIT-PL-1718/oop-alu0100792218.svg?token=qjMyc3K9SAKhDFs5zQop&branch=ecma6)](https://travis-ci.com/ULL-ESIT-PL-1718/oop-alu0100792218)
 
 #### Introduction
 Example corresponds to the section **Laying out a table** of Chapter 6 **[The Secret Life of Objects](http://eloquentjavascript.net/06_object.html)**, book **[Eloquent javaScript](http://eloquentjavascript.net/)**
