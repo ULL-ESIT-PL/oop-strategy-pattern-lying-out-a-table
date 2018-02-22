@@ -1,6 +1,7 @@
 let TCell = require("TCell");
 let RCell = require("RCell");
 let UnderlinedCell = require("UnderlinedCell");
+let StrechCell = require("StrechCell");
 
 class DTable {
   constructor () {}
@@ -39,11 +40,14 @@ class DTable {
     let body = data.map(function(row) {
       return keys.map(function(name) {
         let value = row[name];
-
-        if (/^\s*[-+]?\d+([.]\d*)?([eE][-+]?\d+)?\s*$/.test(value))
+        
+	if (/^\s*[-+]?\d+([.]\d*)?([eE][-+]?\d+)?\s*$/.test(value))
           return new RCell(String(value));
-        else
+        else if (typeof value === 'object')	 
+	  return new StrechCell(new TCell(value.c), value.h, value.w);
+        else 
           return new TCell(String(value));
+
       });
     });
     return [headers].concat(body);
