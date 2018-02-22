@@ -23,10 +23,3 @@ class StrechCell extends TCell{
 }
 
 module.exports = StrechCell
-let sc = new StrechCell(new TCell("abc"), 1, 2);
-
-console.log(sc.minWidth());
-
-console.log(sc.minHeight());
-
-console.log(sc.draw(3,2));
