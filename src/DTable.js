@@ -2,7 +2,7 @@ let TCell = require("TCell");
 let RCell = require("RCell");
 let UnderlinedCell = require("UnderlinedCell");
 let StrechCell = require("StrechCell");
-const { findClass } = require('registry-class');
+const { addMapClass, findClass } = require('registry-class');
 
 class DTable {
   constructor () {}
