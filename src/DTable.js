@@ -2,6 +2,7 @@ let TCell = require("TCell");
 let RCell = require("RCell");
 let UnderlinedCell = require("UnderlinedCell");
 let StrechCell = require("StrechCell");
+const { findClass } = require('registry-class');
 
 class DTable {
   constructor () {}
@@ -40,18 +41,8 @@ class DTable {
     let body = data.map(function(row) {
       return keys.map(function(name) {
         let value = row[name];
-        
-	if (/^\s*[-+]?\d+([.]\d*)?([eE][-+]?\d+)?\s*$/.test(value))
-          return new RCell(String(value));
-        else if (typeof value === 'object'){	 
-	  if (value.type == "StrechCell"){
-            return new StrechCell(new TCell(value.params[0]), value.params[1], value.params[2]);
-	  }else if (value.type == "TCell"){
-	    return new TCell(String(value.params[0]));
-	  }
-	}else 
-          return new TCell(String(value));
-
+        let {currClass, params} = findClass(value);
+        return new currClass(...params);
       });
     });
     return [headers].concat(body);

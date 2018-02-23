@@ -3,8 +3,8 @@
   {"name": "Kilimanjaro\nMontaña mágica", "height": 5895, "country": "Tanzania"},
   {"name": "Everest", "height": 8848, "country": "Nepal\nPaís lejano"},
   {"name": {"type": "StrechCell", "params": ["Mount Fuji", 2]}, "height": 3776, "country": "Japan"},
-  {"name": "Mont Blanc", "height": {"type": "TCell", "params": [4808]}, "country": "Italy/France"},
+  {"name": "Mont Blanc", "height": {"type": "StrechCell", "params": [4808, 2, 4]}, "country": "Italy/France"},
   {"name": "Vaalserberg", "height": 323, "country": "Netherlands"},
   {"name": "Denali", "height": 6168, "country": "United States"},
-  {"name": "Popocatepetl", "height": 5465, "country": "Mexico"}
+  {"name": "Popocatepetl", "height": 5465, "country": { "type": "RCell", "params": ["Mexico"]} }
 ]
