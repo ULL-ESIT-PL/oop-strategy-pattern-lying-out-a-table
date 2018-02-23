@@ -43,9 +43,13 @@ class DTable {
         
 	if (/^\s*[-+]?\d+([.]\d*)?([eE][-+]?\d+)?\s*$/.test(value))
           return new RCell(String(value));
-        else if (typeof value === 'object')	 
-	  return new StrechCell(new TCell(value.c), value.h, value.w);
-        else 
+        else if (typeof value === 'object'){	 
+	  if (value.type == "StrechCell"){
+            return new StrechCell(new TCell(value.params[0]), value.params[1], value.params[2]);
+	  }else if (value.type == "TCell"){
+	    return new TCell(String(value.params[0]));
+	  }
+	}else 
           return new TCell(String(value));
 
       });
