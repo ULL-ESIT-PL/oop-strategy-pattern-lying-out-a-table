@@ -11,7 +11,7 @@ let findClass = (value) => {
   if ((className === 'Number') || (className === 'String'))
       params = [ String(value) ];
   else if (className === 'Object') {	 
-    if (value.type == "StrechCell") {
+    if (value.type) {
       let {className, currClass} = findClass(value.params[0]);
       params = [new currClass(value.params[0]), ...value.params.slice(1)];
     } else {
