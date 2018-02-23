@@ -18,12 +18,11 @@
     "travis",
     "istanbul"
   ],
-  "author": "Casiano Rodríguez León",
+  "author": "Abel Delgado",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ULL-ESIT-GRADOII-PL/OOP/issues"
+    "url": "https://github.com/ULL-ESIT-PL-1718/oop-alu0100792218/issues"
   },
-  "homepage": "https://github.com/ULL-ESIT-GRADOII-PL/OOP/blob/structure/README.md",
   "devDependencies": {
     "better-assert": "^1.0.2",
     "coveralls": "^3.0.0",
