@@ -22,4 +22,8 @@ class StrechCell extends TCell{
     }
 }
 
+const { addMapClass, findClass } = require('registry-class');
+
+addMapClass('StrechCell', StrechCell);
+
 module.exports = StrechCell

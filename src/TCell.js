@@ -28,5 +28,9 @@ class TCell {
   };
 }
 
+const { addMapClass, findClass } = require('registry-class');
+
+addMapClass('String', TCell);
+addMapClass('TCell', TCell);
 
 module.exports = TCell

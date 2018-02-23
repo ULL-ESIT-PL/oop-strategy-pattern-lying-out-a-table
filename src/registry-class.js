@@ -1,14 +1,4 @@
-let TCell = require("TCell");
-let RCell = require("RCell");
-let UnderlinedCell = require("UnderlinedCell");
-let StrechCell = require("StrechCell");
-
 let mapClass = new Map();
-mapClass['String']     = TCell;
-mapClass['TCell']      = TCell;
-mapClass['Number']     = RCell;
-mapClass['RCell']      = RCell;
-mapClass['StrechCell'] = StrechCell;
 
 let addMapClass = (key, clss) => mapClass[key] = clss;
 
