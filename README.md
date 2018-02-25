@@ -69,5 +69,5 @@ se interpreten como del tipo specificado en el atributo `type`**
 ## Notas
 
 Puede verse la solución comentada en el vídeo del profesor
-[]().
+[Reto "oop lying out a table" solución con strategy+registry  pattern](https://youtu.be/RmMcyjQl1as).
 
