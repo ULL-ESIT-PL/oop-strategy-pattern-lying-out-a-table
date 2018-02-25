@@ -44,7 +44,7 @@ La función `dataTable` en `d-table.js` es la que parsea el objeto construído a
             return new TCell(String(value));
   ```
 
-## Elproblema
+## El problema
 
 **Modifique `dataTable` para que aquellas celdas en las que el valor es un objeto en vez de una ` String`  o un `Number`
 se interpreten como del tipo specificado en el atributo `type`**
