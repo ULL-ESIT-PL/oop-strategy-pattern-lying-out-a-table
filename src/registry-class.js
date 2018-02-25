@@ -1,3 +1,4 @@
+let inspect = require("util").inspect;
 let mapClass = new Map();
 
 let addMapClass = (key, clss) => mapClass[key] = clss;
@@ -11,12 +12,11 @@ let findClass = (value) => {
   if ((className === 'Number') || (className === 'String'))
       params = [ String(value) ];
   else if (className === 'Object') {	 
-    if (value.type) {
+    if (value.type && value.params) {
       let {className, currClass} = findClass(value.params[0]);
       params = [new currClass(value.params[0]), ...value.params.slice(1)];
-    } else {
-      params = value.params;
     } 
+    else  throw "Error at: "+inspect(value)+"  'type'  and 'params' attributes are required"
   } 
   return {className, currClass, params};
 };
