@@ -25,10 +25,13 @@
   "devDependencies": {
     "better-assert": "^1.0.2",
     "coveralls": "^3.0.2",
-    "gulp": "^3.9.1",
+    "debug": "^2.6.9",
+    "growl": "^1.10.0",
+    "gulp": "^4.0.0",
     "gulp-shell": "^0.6.5",
     "istanbul": "^0.4.5",
-    "mocha": "^3.5.3",
+    "lodash": "^4.17.5",
+    "mocha": "^5.2.0",
     "nyc": "^11.9.0",
     "should": "^13.2.3"
   },
