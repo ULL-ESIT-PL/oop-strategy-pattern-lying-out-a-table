@@ -9,7 +9,7 @@ gulp.task("run", shell.task('NODE_PATH=./src node ./src/main.js'));
 En versiones v8.*  chrome://inspect en el navegador
 https://nodejs.org/en/docs/inspector/
 */
-gulp.task('debugger', shell.task('NODE_PATH=./src node --inspect-brk src/main.js'));
+gulp.task('debugger', shell.task('echo "visit chrome://inspect" && NODE_PATH=./src node --inspect-brk src/main.js'));
 
 // Deprecated form:
 gulp.task('debug', shell.task('NODE_PATH=./src node --inspect --debug-brk src/main.js'));

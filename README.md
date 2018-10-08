@@ -1,5 +1,15 @@
 # Reto para la Práctica de OOP
 
+Solución al reto2: 
+
+**Modifique `dataTable` para que aquellas celdas en las que el valor es un objeto en vez de una `String`  o un `Number`
+se interpreten como del tipo specificado en el atributo `type` del objeto**
+
+Ejemplo: 
+```
+{"name": {"type": "StrechCell", params: ["Teide", 2, 6]},
+{"name": "Mont Blanc", "height": {"type": "TCell", params: [4808]}, "country": "Italy/France"},
+```
 
 ## El Contexto. Introducción
 

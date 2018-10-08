@@ -1,5 +1,6 @@
 let inspect = require("util").inspect;
-let mapClass = new Map();
+let mapClass;
+mapClass = mapClass ||new Map();
 
 let addMapClass = (key, clss) => mapClass[key] = clss;
 
