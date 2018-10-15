@@ -28,7 +28,7 @@
     "debug": "^2.6.9",
     "growl": "^1.10.0",
     "gulp": "^3.9.1",
-    "gulp-shell": "^0.6.5",
+    "gulp-shell": "*",
     "istanbul": "^0.4.5",
     "lodash": "^4.17.5",
     "mocha": "^5.2.0",
@@ -37,5 +37,6 @@
   },
   "engines": {
     "node": ">= 6.x"
-  }
+  },
+  "dependencies": {}
 }

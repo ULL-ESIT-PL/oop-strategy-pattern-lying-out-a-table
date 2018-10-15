@@ -6,5 +6,5 @@
   {"name": "Mont Blanc", "height": {"type": "StrechCell", "params": [4808, 4, 2]}, "country": "Italy/France"},
   {"name": "Vaalserberg", "height": 323, "country": "Netherlands"},
   {"name": "Denali", "height": 6168, "country": "United States"},
-  {"name": "Popocatepetl", "height": 5465, "country": { "type": "RCell", "params": ["Mexico"]} }
+  {"name": "Popocatepetl", "height": 5465, "country": "Mexico" }
 ]

@@ -1,0 +1,4 @@
+[
+  {"name": "Popocatepetl", "height": 5465, "country": "Mexico" },
+  {"name": "Popocatepetl", "height": 5465, "country": { "type": "RCell", "params": ["Mexico"]} }
+]

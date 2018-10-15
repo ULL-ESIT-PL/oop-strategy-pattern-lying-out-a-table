@@ -1,7 +1,4 @@
-let TCell = require("TCell");
-let RCell = require("RCell");
 let UnderlinedCell = require("UnderlinedCell");
-let StrechCell = require("StrechCell");
 
 const { addMapClass, findClass } = require('registry-class');
 
@@ -43,6 +40,8 @@ class DTable {
       return keys.map(function(name) {
         let value = row[name];
         let {currClass, params} = findClass(value);
+        //console.log('currClass = '+currClass.name);
+        //debugger;
         return new currClass(...params);
       });
     });
