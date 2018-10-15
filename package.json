@@ -27,7 +27,7 @@
     "coveralls": "^3.0.2",
     "debug": "^2.6.9",
     "growl": "^1.10.0",
-    "gulp": "^4.0.0",
+    "gulp": "^3.9.1",
     "gulp-shell": "^0.6.5",
     "istanbul": "^0.4.5",
     "lodash": "^4.17.5",
